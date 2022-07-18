@@ -20,54 +20,30 @@ var maxRows = 42;
 
 // * Game and album titles
 var ary_TitleData = [
-	  "1: The Highly Responsive to Prayers"
-	, "2: The Story of Eastern Wonderland"
-	, "3: Phantasmagoria of Dim.Dream"
-	, "4: Lotus Land Story"
-	, "5: Mystic Square"
-	, "Shuusou Gyoku"
-	, "Kioh Gyoku"
-	, "6: The Embodiment of Scarlet Devil"
-	, "7: Perfect Cherry Blossom"
-	, "7.5: Immaterial and Missing Power"
-	, "8: Imperishable Night"
-	, "9: Phantasmagoria of Flower View"
-	, "9.5: Shoot the Bullet"
-	, "10: Mountain of Faith"
-	, "10.5: Scarlet Weather Rhapsody"
-	, "11: Subterranean Animism"
-	, "12.3: Touhou Hisoutensoku"
-	, "12: Undefined Fantastic Object"
-	, "12.5: Double Spoiler"
-	, "12.8: Great Fairy Wars"
-	, "13: Ten Desires"
-	, "13.5: Hopeless Masquerade"
-	, "14: Double Dealing Character"
-	, "14.3: Impossible Spell Card"
-	, "Dolls in Pseudo Paradise"
-	, "Ghostly Field Club"
-	, "Changeability of Strange Dream"
-	, "Retrospective 53 minutes"
-	, "Magical Astronomy"
-	, "Unknown Flower, Mesmerizing Journey"
-	, "Trojan Green Asteroid"
-	, "Neo-traditionalism of Japan"
-	, "Akyuu's Untouched Score vol. 1"
-	, "Akyuu's Untouched Score vol. 2"
-	, "Akyuu's Untouched Score vol. 3"
-	, "Akyuu's Untouched Score vol. 4"
-	, "Akyuu's Untouched Score vol. 5"
-	, "Bonus CDs + Other Tracks"
-	, "14.5: Urban Legend in Limbo"
-	, "15: Legacy of Lunatic Kingdom"
-	, "16: Hidden Star in Four Seasons"
-	, "15.5: Antinomy of Common Flowers"
-	, "16.5: Violet Detector"
-	, "Dr. Latency's Freak Report"
-	, "Dateless Bar \"Old Adam\""
-	, "17: Wily Beast and Weakest Creature"
-	, "17.5: Touhou Gouyoku Ibun"
-	, "18: Unconnected Marketeers"
+	  "Putting Away Leftovers"
+	, "Collecting Dishes"
+	, "Handwashing Dishes"
+	, "Putting Dishes in Dishwasher"
+	, "Putting Away Dishes"
+	, "Cooking Meals"
+	, "Clean Counters"
+	, "Clean Stove"
+	, "Clean Microwave"
+	, "Collecting Dirty Clothes"
+	, "Putting Clothes in Washer/Dryer"
+	, "Folding Laundry"
+	, "Putting Clean Laundry Away"
+	, "Ironing Clothes"
+	, "Picking Up Trash"
+	, "Taking Out Trash"
+	, "Vacuuming"
+	, "Mopping/Spot Cleaning Floors"
+	, "Spot Cleaning (Dusting, etc.)"
+	, "Unclogging Sink"
+	, "Cleaning Toilet"
+	, "Cleaning Shower/Bathtub"
+	, "Cleaning Mirrors"
+	, "Putting Away Odds 'n Ends "
 ];
 
 // Number of columns in the selection list.
@@ -120,9 +96,9 @@ var ary_SongData = [
 	//unused
 	[1, "Shrine of the Wind",				[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "fZ2BDUV.jpg", "DdCsWBMHqfU", "The Highly Responsive to Prayers", "HRtP", "Unused track", 0, 0],
 	[1, "Theme of Eastern Story",			[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0], "0Ig2aUY.jpg", "qGwASZn0ZKA", "Akyuu's Untouched Score vol. 5", "AUS5", "Track 15", 0, 0],
-	
+
 	//Other
-	
+
 	//Story of Eastern Wonderland / Akyuu's Untouched Score vol. 3
 	[1, "Eastern Recorded Sealing of a Demon ~ Pure Land Mandala",	[0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0], "XHi6YmD.jpg", "fHOF0qPwEzs", "Story of Eastern Wonderland", "SoEW", "Title Screen", 0, 0],
 	[1, "Hakurei ~ Eastern Wind",									[0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0], "XHi6YmD.jpg", "ytSxZnZ_A_8", "Story of Eastern Wonderland", "SoEW", "Stage 1", 0, 2],
@@ -142,7 +118,7 @@ var ary_SongData = [
 	[1, "Hakurei Shrine Grounds",									[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0], "rHPHyai.jpg", "aPTxjd1l9Gk", "Akyuu's Untouched Score vol. 3", "AUS3", "Track 16", 0, 0],
 	[1, "Sunfall",													[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0], "rHPHyai.jpg", "4vvazD9j2G8", "Akyuu's Untouched Score vol. 3", "AUS3", "Track 17", 0, 0],
 	[1, "Sealed Demon's Finale",									[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0], "rHPHyai.jpg", "E-iw2aR-R1Y", "Akyuu's Untouched Score vol. 3", "AUS3", "Track 18", 0, 0],
-	
+
 	//Phantasmagoria of Dim.Dream / Akyuu's Untouched Score vol. 4
 	[1, "A Dream Transcending Space-Time",			[0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0], "Imp5ltX.jpg", "OQ9Q5Kb_T1Y", "Phantasmagoria of Dim.Dream", "PoDD", "Title Screen", 0, 0],
 	[1, "Selection",								[0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0], "Imp5ltX.jpg", "_9bzLaz55tM", "Phantasmagoria of Dim.Dream", "PoDD", "Character Selection", 0, 0],
@@ -166,7 +142,7 @@ var ary_SongData = [
 	[1, "Winds of Time",							[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0], "qocxn1B.jpg", "lEbHy9Be0Qo", "Akyuu's Untouched Score vol. 4", "AUS4", "Track 22 (Unused theme)", 0, 0],
 	[1, "Starbow Dream",							[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0], "qocxn1B.jpg", "vtjrcQMLgC4", "Akyuu's Untouched Score vol. 4", "AUS4", "Track 23 (Unused theme)", 0, 0],
 	[1, "Phantasmagoria",							[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0], "qocxn1B.jpg", "WPh5xHYzm40", "Akyuu's Untouched Score vol. 4", "AUS4", "Track 24 (Unused theme)", 0, 0],
-	
+
 	//Lotus Land Story / Akyuu's Untouched Score vol. 1
 	[1, "Gensokyo ~ Lotus Land Story",						[0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "9Bgvih5.jpg", "ZI6ctU6xOlI", "Lotus Land Story", "LLS", "Title Screen", 0, 0],
 	[1, "Witching Dream",									[0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "9Bgvih5.jpg", "2iVplhDGeNs", "Lotus Land Story", "LLS", "Reimu's Stage 1", 0, 2],
@@ -198,7 +174,7 @@ var ary_SongData = [
 	[1, "Crescent Dream",									[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "JJYLLmO.jpg", "PpLE1aI5PYs", "Akyuu's Untouched Score vol. 1", "AUS1", "Track 28 (Unused theme)", 0, 0],
 	[1, "Decoration Battle (Unused Version)",				[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "JJYLLmO.jpg", "sj3hjPeUupk", "Akyuu's Untouched Score vol. 1", "AUS1", "Track 29 (Orange's theme - Unused)", 0, 0],
 	[1, "Faint Dream ~ Inanimate Dream (Unused Version)",	[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "JJYLLmO.jpg", "iTOhEWM2kz8", "Akyuu's Untouched Score vol. 1", "AUS1", "Track 30 (Yuuka's 2nd theme - Unused)", 0, 0],
-	
+
 	//Mystic Square / Akyuu's Untouched Score vol. 2
 	[1, "Wondrous Tales of Romance ~ Mystic Square",	[0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "8YV2A7P.jpg", "Szhq0dV-szY", "Mystic Square", "MS", "Title Screen", 0, 0],
 	[1, "Dream Express",								[0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "8YV2A7P.jpg", "6gYaX4HgV4g", "Mystic Square", "MS", "Stage 1", 0, 2],
@@ -257,7 +233,7 @@ var ary_SongData = [
 	[1, "Lovely Mound of Cherry Blossoms ~ Flower of Japan",	[0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "eQsoLaw.jpg", "9NUT7GI-yqY", "Kioh Gyoku", "KG", "Yuuka's theme", 0, 1],
 	[1, "Warrior Maiden ~ Heart of Valkyrie",					[0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "eQsoLaw.jpg", "QZ_7Ww4aZPI", "Kioh Gyoku", "KG", "Morgan's theme", 0, 1],
 	[1, "Enigmatic Doll ~ God Knows",							[0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "eQsoLaw.jpg", "kBReFar3YGw", "Kioh Gyoku", "KG", "Muse's theme", 0, 1],
-	
+
 	//The Embodiment of Scarlet Devil
 	[1, "A Dream that Is More Scarlet than Red",				[0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "eyprldJ.jpg", "HZvnP0svJzk", "The Embodiment of Scarlet Devil", "EoSD", "Title Screen", 0, 0],
 	[1, "A Soul as Red as a Ground Cherry",						[0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "eyprldJ.jpg", "w279PjazOAw", "The Embodiment of Scarlet Devil", "EoSD", "Stage 1", 0, 2],
@@ -276,7 +252,7 @@ var ary_SongData = [
 	[1, "U.N. Owen Was Her?",									[0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "eyprldJ.jpg", "xcvouNwZbI0", "The Embodiment of Scarlet Devil", "EoSD", "Flandre Scarlet's theme", 0, 1],
 	[1, "An Eternity that Is More Transient than Scarlet",		[0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "eyprldJ.jpg", "OQ5f49lDH7E", "The Embodiment of Scarlet Devil", "EoSD", "Ending", 0, 0],
 	[1, "Crimson Tower ~ Eastern Dream...",						[0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "eyprldJ.jpg", "xtv5YP_Hgzs", "The Embodiment of Scarlet Devil", "EoSD", "Staff Roll", 0, 0],
-	
+
 	//Perfect Cherry Blossom
 	[1, "Mystical Dream ~ Snow or Cherry Petal",						[0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "60c5lGk.jpg", "UcoJBM7Cqic", "Perfect Cherry Blossom", "PCB", "Title Screen", 0, 0],
 	[1, "Paradise ~ Deep Mountain",										[0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "60c5lGk.jpg", "hjRRg8p8YCc", "Perfect Cherry Blossom", "PCB", "Stage 1", 0, 2],
@@ -298,7 +274,7 @@ var ary_SongData = [
 	[1, "Necrofantasia",												[0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "60c5lGk.jpg", "ygy6O9kVt7U", "Perfect Cherry Blossom", "PCB", "Yukari Yakumo's theme", 0, 1],
 	[1, "Dream of a Spring Breeze",										[0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "60c5lGk.jpg", "p39pgg5TPQw", "Perfect Cherry Blossom", "PCB", "Ending", 0, 0],
 	[1, "Sakura, Sakura ~ Japanize Dream...",							[0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "60c5lGk.jpg", "DoBbCCteNLs", "Perfect Cherry Blossom", "PCB", "Staff Roll", 0, 0],
-	
+
     //Immaterial and Missing Power
 	[1, "Memory of Forgathering Dream",								[0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "LohRYHX.jpg", "LV_LRPy50hc", "Immaterial and Missing Power", "IaMP", "Title Screen", 0, 0],
 	[1, "Eastern Mystical Love Consultation",						[0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "LohRYHX.jpg", "WN1vjUR83Vg", "Immaterial and Missing Power", "IaMP", "Hakurei Shrine 1", 1, 3],
@@ -334,7 +310,7 @@ var ary_SongData = [
 	[1, "Swift Battle",												[0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "LohRYHX.jpg", "rpkL_0L1VMQ", "Immaterial and Missing Power", "IaMP", "Pre-battle", 0, 0],
 	[1, "Bad Omen",													[0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "LohRYHX.jpg", "_ag4_sfqkLI", "Immaterial and Missing Power", "IaMP", "Pre-battle", 0, 0],
 	[1, "Broken Moon",												[0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "LohRYHX.jpg", "l6LcKxjICek", "Immaterial and Missing Power", "IaMP", "Pre-battle", 0, 0],
-	
+
     //Imperishable Night
 	[1, "Imperishable Night ~ Eastern Night",						[0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "n1inkfk.jpg", "zQe0crwJ36Y", "Imperishable Night", "IN", "Title Screen", 0, 0],
 	[1, "Illusionary Night ~ Ghostly Eyes",							[0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "n1inkfk.jpg", "FLWkALwp9SA", "Imperishable Night", "IN", "Stage 1", 0, 2],
@@ -357,7 +333,7 @@ var ary_SongData = [
 	[1, "Evening Primrose",											[0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "n1inkfk.jpg", "FGxA6P_2lbI", "Imperishable Night", "IN", "Ending", 0, 0],
 	[1, "Eternal Dream ~ Mystical Maple",							[0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "n1inkfk.jpg", "YlPcGSp3q_M", "Imperishable Night", "IN", "Staff Roll", 0, 0],
 	[1, "Eastern Youkai Beauty",									[0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "n1inkfk.jpg", "ZtS34aPkl-s", "Imperishable Night", "IN", "Last Word", 0, 0],
-	
+
     //Phantasmagoria of Flower View
 	[1, "Flower Viewing Mound ~ Higan Retour",							[0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "aZAL5nF.jpg", "w-zZBPxMFmk", "Phantasmagoria of Flower View", "PoFV", "Title Screen", 0, 0],
 	[1, "Spring Lane ~ Colorful Path",									[0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "aZAL5nF.jpg", "0wNx_C25BYg", "Phantasmagoria of Flower View", "PoFV", "Reimu Hakurei's theme", 0, 1],
@@ -378,7 +354,7 @@ var ary_SongData = [
 	[1, "Mound of Shigan",												[0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "aZAL5nF.jpg", "B9LGyWeb8m8", "Phantasmagoria of Flower View", "PoFV", "Pre-Boss Conversation", 0, 0],
 	[1, "The Flowers Remain in Fantasy",								[0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "aZAL5nF.jpg", "09-VOC9d2dQ", "Phantasmagoria of Flower View", "PoFV", "Ending", 0, 0],
 	[1, "Flower of Soul ~ Another Dream...",							[0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "aZAL5nF.jpg", "gWTN7L7xEOY", "Phantasmagoria of Flower View", "PoFV", "Staff Roll", 0, 0],
-	
+
     //Shoot the Bullet
 	[1, "Tengu's Notebook ~ Mysterious Note",		[0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "X0DDCGf.jpg", "QEYFuuHkcCM", "Shoot the Bullet", "StB", "Title/Menu Screen", 0, 0],
 	[1, "Wind Circulation ~ Wind Tour",				[0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "X0DDCGf.jpg", "2KaA6kBEHZ0", "Shoot the Bullet", "StB", "Photo theme 1", 0, 2],
@@ -386,7 +362,7 @@ var ary_SongData = [
 	[1, "Sleepless Night of the Eastern Country",	[0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "X0DDCGf.jpg", "f7d2ULj8eKo", "Shoot the Bullet", "StB", "Photo theme 3", 0, 2],
 	[1, "Retrospective Kyoto",						[0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "X0DDCGf.jpg", "J8EPBPQkMQo", "Shoot the Bullet", "StB", "Photo theme 4", 0, 2],
 	//[1, "Wind God Girl (Short Version)",			[0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "aZAL5nF.jpg", "pe7_DKzmJts", "Phantasmagoria of Flower View", "PoFV", "", 0, 0],
-	
+
     //Mountain of Faith
 	[1, "Sealed Gods",												[0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "c3yK3I6.jpg", "5KzgwA7HJko", "Mountain of Faith", "MoF", "Title Screen", 0, 0],
 	[1, "A God That Misses People ~ Romantic Fall",					[0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "c3yK3I6.jpg", "jJbHpAUcvkE", "Mountain of Faith", "MoF", "Stage 1", 0, 2],
@@ -406,7 +382,7 @@ var ary_SongData = [
 	[1, "Shrine at the Foot of the Mountain",						[0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "c3yK3I6.jpg", "iuYOY3lbJU8", "Mountain of Faith", "MoF", "Ending", 0, 0],
 	[1, "The Gods Give Us Blessed Rain ~ Sylphid Dream",			[0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "c3yK3I6.jpg", "PeYZ7eIcKJg", "Mountain of Faith", "MoF", "Staff Roll", 0, 0],
 	[1, "Player's Score",											[0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "c3yK3I6.jpg", "l6dCMV-le_E", "Mountain of Faith", "MoF", "Score", 0, 0],
-	
+
     //Scarlet Weather Rhapsody
 	[1, "Sky of Scarlet Perception",								[0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "9mxFAor.jpg", "CfHAH2LNI4s", "Scarlet Weather Rhapsody", "SWR", "Title Screen", 0, 0],
 	[1, "Usual Days",												[0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "9mxFAor.jpg", "oxQ3nT9MvdU", "Scarlet Weather Rhapsody", "SWR", "Pre-Battle", 0, 0],
@@ -439,7 +415,7 @@ var ary_SongData = [
 	[1, "Lunatic Eyes ~ Invisible Full Moon",						[0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "9mxFAor.jpg", "f28Hr59IVyw", "Scarlet Weather Rhapsody", "SWR", "Reisen Udongein Inaba's theme", 1, 3],
 	[1, "Wind God Girl",											[0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "9mxFAor.jpg", "dkVOs4Rm5HI", "Scarlet Weather Rhapsody", "SWR", "Aya Shameimaru's theme", 1, 3],
 	[1, "Higan Retour ~ Riverside View",							[0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "9mxFAor.jpg", "lPfb9OtWdVs", "Scarlet Weather Rhapsody", "SWR", "Komachi Onozuka's theme", 1, 3],
-	
+
     //Subterranean Animism
 	[1, "Awakening of the Earth Spirits",				[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "B1vVgeE.jpg", "whxZaFwIbvc", "Subterranean Animism", "SA", "Title Screen", 0, 0],
 	[1, "The Dark Blowhole",							[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "B1vVgeE.jpg", "c7WhJta1_sw", "Subterranean Animism", "SA", "Stage 1", 0, 2],
@@ -459,7 +435,7 @@ var ary_SongData = [
 	[1, "The Earth Spirits' Homecoming",				[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "B1vVgeE.jpg", "Bf8wcOYctqA", "Subterranean Animism", "SA", "Ending", 0, 0],
 	[1, "Energy Daybreak ~ Future Dream...",			[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "B1vVgeE.jpg", "Ruy9z2NsAmo", "Subterranean Animism", "SA", "Staff Roll", 0, 0],
 	//[1, "Player's Score",								[0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "c3yK3I6.jpg", "7jrqZShXtZw", "Mountain of Faith", "MoF", "", 0, 0],
-	
+
     //Touhou Hisoutensoku
 	[1, "Did You See that Shadow?",										[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "sRB3UDY.jpg", "CSluXtLcCyM", "Touhou Hisoutensoku", "Soku", "Title Screen", 0, 0],
 	[1, "Memory of Forgathering Dream",									[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "sRB3UDY.jpg", "-2x22OF5Ukg", "Touhou Hisoutensoku", "Soku", "VS Select", 0, 0],
@@ -510,7 +486,7 @@ var ary_SongData = [
 	//[1, "Lunatic Eyes ~ Invisible Full Moon",							[0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "9mxFAor.jpg", "f28Hr59IVyw", "Scarlet Weather Rhapsody", "SWR", "", 0, 0],
 	//[1, "Wind God Girl",												[0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "9mxFAor.jpg", "dkVOs4Rm5HI", "Scarlet Weather Rhapsody", "SWR", "", 0, 0],
 	//[1, "Higan Retour ~ Riverside View",								[0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "9mxFAor.jpg", "lPfb9OtWdVs", "Scarlet Weather Rhapsody", "SWR", "", 0, 0],
-	
+
     //Undefined Fantastic Object
 	[1, "A Shadow in the Blue Sky",								[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "1idQrK8.jpg", "oDclLE_9z8M", "Undefined Fantastic Object", "UFO", "Title Screen", 0, 0],
 	[1, "At the End of Spring",									[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "1idQrK8.jpg", "w0PDKhGGTJo", "Undefined Fantastic Object", "UFO", "Stage 1", 0, 2],
@@ -530,7 +506,7 @@ var ary_SongData = [
 	[1, "Youkai Temple",										[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "1idQrK8.jpg", "ioR-AXXOY6s", "Undefined Fantastic Object", "UFO", "Ending", 0, 0],
 	[1, "Returning Home From the Sky ~ Sky Dream",				[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "1idQrK8.jpg", "N3nec9I10tA", "Undefined Fantastic Object", "UFO", "Staff Roll", 0, 0],
 	//[1, "Player's Score",										[0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "c3yK3I6.jpg", "7jrqZShXtZw", "Mountain of Faith", "MoF", "", 0, 0],
-	
+
     //Double Spoiler
 	[1, "Newshound",									[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "SY3nx2Y.jpg", "eCVFE0XUOHc", "Double Spoiler", "DS", "Title/Menu Screen", 0, 0],
 	[1, "The Mystery in Your Town",						[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "SY3nx2Y.jpg", "drGpzeLP9AU", "Double Spoiler", "DS", "Photo Theme 1", 0, 2],
@@ -539,7 +515,7 @@ var ary_SongData = [
 	[1, "Bell of Avici ~ Infinite Nightmare",			[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "SY3nx2Y.jpg", "oING_ik7sVc", "Double Spoiler", "DS", "Photo Theme 4", 0, 2],
 	[1, "The Youkai Mountain ~ Mysterious Mountain",	[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "SY3nx2Y.jpg", "r_4z2uK2p70", "Double Spoiler", "DS", "Photo Theme 5", 1, 2],
 	[1, "Congratulation Screen",						[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "SY3nx2Y.jpg", "g6hgWI5lCG4", "Double Spoiler", "DS", "Congratulation Screen", 0, 0],
-	
+
     //Great Fairy Wars
 	[1, "An Ice Fairy in Spring",				[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "NqI4Bym.jpg", "G_HuSIsYiOs", "Great Fairy Wars", "GFW", "Title Screen", 0, 0],
 	[1, "The Refrain of the Lovely Great War",	[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "NqI4Bym.jpg", "yHlbViNW-eI", "Great Fairy Wars", "GFW", "Stage 1", 0, 2],
@@ -551,7 +527,7 @@ var ary_SongData = [
 	[1, "Magus Night",							[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "NqI4Bym.jpg", "LI1gNmUnD_M", "Great Fairy Wars", "GFW", "Marisa Kirisame's theme", 0, 1],
 	[1, "An Ice Fairy in Spring - Still -",		[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "NqI4Bym.jpg", "NHoquwHU2v4", "Great Fairy Wars", "GFW", "Ending", 0, 0],
 	[1, "Player's Score",						[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,0,1], "NqI4Bym.jpg", "OJ5vmLeq1r4", "Great Fairy Wars", "GFW", "Score", 1, 0],
-	
+
     //Ten Desires
 	[1, "Spirit of Avarice",					[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "QrUdIZd.jpg", "_s53iSvSeso", "Ten Desires", "TD", "Title Screen", 0, 0],
 	[1, "Night Sakura of Dead Spirits",			[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "QrUdIZd.jpg", "TZ_r-Fwl4kA", "Ten Desires", "TD", "Stage 1", 0, 2],
@@ -571,7 +547,7 @@ var ary_SongData = [
 	[1, "A New Wind at the Shrine",				[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "QrUdIZd.jpg", "NSZRXeTX9yc", "Ten Desires", "TD", "Ending", 0, 0],
 	[1, "Desire Dream",							[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "QrUdIZd.jpg", "PWk-2HLhE_M", "Ten Desires", "TD", "Staff Roll", 0, 0],
 	//[1, "Player's Score",						[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "NqI4Bym.jpg", "t3hBNsqiwL8", "Great Fairy Wars", "GFW", "", 0, 0],
-	
+
     //Hopeless Masquerade
 	[1, "This Dull World's Unchanging Pessimism",			[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "goVagPC.jpg", "3t1aJTxYZ7A", "Hopeless Masquerade", "HM", "Intro", 0, 0],
 	[1, "Shinkirou Orchestra",								[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "goVagPC.jpg", "Q4uUgwHgX-I", "Hopeless Masquerade", "HM", "Title Screen", 0, 0],
@@ -594,7 +570,7 @@ var ary_SongData = [
 	[1, "Officially-Sanctioned Twilight Newspaper",			[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "goVagPC.jpg", "L2VS3IbiJeg", "Hopeless Masquerade", "HM", "Staff Roll", 0, 0],
 	[1, "Performer Selection",								[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "goVagPC.jpg", "XgdP4f7Dhvs", "Hopeless Masquerade", "HM", "Character Select", 0, 0],
 	[1, "Last Word Unleashed",								[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "goVagPC.jpg", "h1IOvgXuW3U", "Hopeless Masquerade", "HM", "Last Word", 0, 0],
-	
+
     //Double Dealing Character
 	[1, "Mysterious Purification Rod",							[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "mevzzKr.jpg", "wUHyG9XqOMI", "Double Dealing Character", "DDC", "Title Screen", 0, 0],
 	[1, "Mist Lake",											[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "mevzzKr.jpg", "bodys69FTEk", "Double Dealing Character", "DDC", "Stage 1", 0, 2],
@@ -614,7 +590,7 @@ var ary_SongData = [
 	[1, "Magical Power of the Mallet",							[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "mevzzKr.jpg", "VAdcF2IdyZY", "Double Dealing Character", "DDC", "Ending", 0, 0],
 	[1, "Strange, Strange Instruments",							[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "mevzzKr.jpg", "-YVCLjnMK6E", "Double Dealing Character", "DDC", "Staff Roll", 0, 0],
 	//[1, "Player's Score",										[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "NqI4Bym.jpg", "t3hBNsqiwL8", "Great Fairy Wars", "GFW", "", 0, 0],
-	
+
     //Impossible Spell Card
 	[1, "Raise the Signal Fire of Cheating",			[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "sN4EeZI.jpg", "PM0X913-T3Q", "Impossible Spell Card", "ISC", "Title/Menu Screen", 0, 0],
 	[1, "Cheat Against the Impossible Danmaku",			[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "sN4EeZI.jpg", "qYtg2kI3F-E", "Impossible Spell Card", "ISC", "Stage Theme 1", 0, 2],
@@ -625,7 +601,7 @@ var ary_SongData = [
 	//[1, "Illusionary Joururi",						[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "mevzzKr.jpg", "ge71HoKN_0s", "Double Dealing Character", "DDC", "", 0, 0],
 	//[1, "Reverse Ideology",							[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "mevzzKr.jpg", "hYcb854qGx0", "Double Dealing Character", "DDC", "", 0, 0],
 	//[1, "The Youkai Mountain ~ Mysterious Mountain",	[0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "c3yK3I6.jpg", "b5fNem6GvYA", "Mountain of Faith", "MoF", "", 0, 0],
-	
+
     //Dolls in Pseudo Paradise
 	[1, "Legend of Hourai",											[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "lyAFcV7.jpg", "FgyIpysqOxE", "Dolls in Pseudo Paradise", "DiPP", "Track 1", 0, 0],
 	[1, "Dichromatic Lotus Butterfly ~ Red and White",				[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "lyAFcV7.jpg", "3bS0Y2if3wU", "Dolls in Pseudo Paradise", "DiPP", "Track 2", 0, 0],
@@ -640,7 +616,7 @@ var ary_SongData = [
 	[1, "U.N. Owen was Her?",										[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "lyAFcV7.jpg", "c3bWWBMjSQY", "Dolls in Pseudo Paradise", "DiPP", "Track 11", 1, 0],
 	[1, "Eternal Shrine Maiden",									[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "lyAFcV7.jpg", "cvfC2iYjkNw", "Dolls in Pseudo Paradise", "DiPP", "Track 12", 1, 0],
 	[1, "The Strange Everyday Life of the Flying Shrine Maiden",	[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "lyAFcV7.jpg", "K77Yvze2xYk", "Dolls in Pseudo Paradise", "DiPP", "Track 13", 0, 0],
-	
+
     //Ghostly Field Club
 	[1, "Dying in the Dendera Fields in the Night",					[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "WYOa3JD.jpg", "TkqBfFXvCZ0", "Ghostly Field Club", "GFC", "Track 1", 0, 0],
 	[1, "Girls' Sealing Club",										[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "WYOa3JD.jpg", "kAiURYQLCkU", "Ghostly Field Club", "GFC", "Track 2", 0, 0],
@@ -653,7 +629,7 @@ var ary_SongData = [
 	[1, "Magical Girl Crusade",										[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "WYOa3JD.jpg", "gEkhCF595HE", "Ghostly Field Club", "GFC", "Track 9", 1, 0],
 	[1, "A Maiden's Illusionary Funeral ~ Necro-Fantasy",			[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "WYOa3JD.jpg", "jq6gMC_5OlM", "Ghostly Field Club", "GFC", "Track 10", 1, 0],
 	[1, "Eternal Festival of Illusions",							[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "WYOa3JD.jpg", "xI2fipW9Dw4", "Ghostly Field Club", "GFC", "Track 11", 0, 0],
-	
+
     //Changeability of Strange Dream
 	[1, "Kid's Festival ~ Innocent Treasures",						[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "OlSof0n.jpg", "bTlA_Lfssp0", "Changeability of Strange Dream", "CoSD", "Track 1", 0, 0],
 	[1, "Dream of Arcadia",											[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "OlSof0n.jpg", "CvcPbY5G89Y", "Changeability of Strange Dream", "CoSD", "Track 2", 0, 0],
@@ -666,7 +642,7 @@ var ary_SongData = [
 	[1, "Border Between Dreams and Reality",						[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "OlSof0n.jpg", "UvXMicfIr8Q", "Changeability of Strange Dream", "CoSD", "Track 9", 0, 0],
 	[1, "Phantasm Machine ~ Phantom Factory",						[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "OlSof0n.jpg", "BRBEWWPzQiM", "Changeability of Strange Dream", "CoSD", "Track 10", 1, 0],
 	[1, "Mystical Maple ~ Eternal Dream",							[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "OlSof0n.jpg", "XvCulJDjQPI", "Changeability of Strange Dream", "CoSD", "Track 11", 1, 0],
-	
+
     //Retrospective 53 minutes
 	[1, "Hiroshige No.36 ~ Neo Super-Express",			[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "xCSKFnf.jpg", "NKs1wYOSBp8", "Retrospective 53 minutes", "R53m", "Track 1", 0, 0],
 	[1, "Blue Sea of 53 Minutes",						[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "xCSKFnf.jpg", "6owdOvGC1m0", "Retrospective 53 minutes", "R53m", "Track 2", 0, 0],
@@ -679,7 +655,7 @@ var ary_SongData = [
 	[1, "Locked Girl ~ The Girl's Secret Room",			[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "xCSKFnf.jpg", "_ZQdzdRlhUc", "Retrospective 53 minutes", "R53m", "Track 9", 1, 0],
 	[1, "Gensokyo Millennium ~ History of the Moon",	[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "xCSKFnf.jpg", "sxDLAWXrnD0", "Retrospective 53 minutes", "R53m", "Track 10", 1, 0],
 	[1, "The Purest Sky and Sea",						[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "xCSKFnf.jpg", "e-OvejWVzcQ", "Retrospective 53 minutes", "R53m", "Track 11", 0, 0],
-	
+
     //Magical Astronomy
 	[1, "Welcome to the Moon Tour",					[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "gRfj7h7.jpg", "Fl1SfPejxMk", "Magical Astronomy", "MA", "Track 1", 0, 0],
 	[1, "Greenwich in the Sky",						[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "gRfj7h7.jpg", "Tab2XwaM-Wg", "Magical Astronomy", "MA", "Track 2", 0, 0],
@@ -691,12 +667,12 @@ var ary_SongData = [
 	[1, "Celestial Wizardry ~ Magical Astronomy",	[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "gRfj7h7.jpg", "hBOx3PpO_w4", "Magical Astronomy", "MA", "Track 8", 0, 0],
 	[1, "Necrofantasia",							[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "gRfj7h7.jpg", "bku_wFW8nPo", "Magical Astronomy", "MA", "Track 9", 1, 0],
 	[1, "The Far Side of the Moon",					[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "gRfj7h7.jpg", "U9NWsGwXc1k", "Magical Astronomy", "MA", "Track 10", 0, 0],
-	
+
     //Unknown Flower, Mesmerizing Journey
 	[1, "Unknown Flower, Mesmerizing Journey",			[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "zlV63ty.jpg", "R1pdzwMotY4", "Unknown Flower, Mesmerizing Journey", "UFMJ", "Track 1", 0, 0],
 	[1, "Bell of Avici ~ Infinite Nightmare",			[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "zlV63ty.jpg", "FN83pkGa8kM", "Unknown Flower, Mesmerizing Journey", "UFMJ", "Track 2", 1, 0],
 	[1, "Tomorrow will be Special; Yesterday was Not",	[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "zlV63ty.jpg", "rHWJcbE6KrI", "Unknown Flower, Mesmerizing Journey", "UFMJ", "Track 3", 1, 0],
-	
+
     //Trojan Green Asteroid
 	[1, "Satellite TORIFUNE",						[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "9PZySav.png", "_P6rXMN4Dzg", "Trojan Green Asteroid", "TGA", "Track 1", 0, 0],
 	[1, "Trojan Asteroid Jungle",					[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "9PZySav.png", "oVmn5fv83Ew", "Trojan Green Asteroid", "TGA", "Track 2", 0, 0],
@@ -708,7 +684,7 @@ var ary_SongData = [
 	[1, "The Barrier of Ame-no-torifune Shrine",	[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "9PZySav.png", "zdNA3Msd36g", "Trojan Green Asteroid", "TGA", "Track 8", 0, 0],
 	[1, "Emotional Skyscraper ~ Cosmic Mind",		[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "9PZySav.png", "kXYavnqayYc", "Trojan Green Asteroid", "TGA", "Track 9", 1, 0],
 	[1, "The Gensokyo That Floats in Outer Space",	[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "9PZySav.png", "hmOSTLbcIoc", "Trojan Green Asteroid", "TGA", "Track 10", 0, 0],
-	
+
     //Neo-traditionalism of Japan
 	[1, "Green Sanatorium",												[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "5ufGjMK.jpg", "yE6shlNOxHM", "Neo-traditionalism of Japan", "NToJ", "Track 1", 0, 0],
 	[1, "Led On by a Cow to Visit Zenkou Temple",						[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "5ufGjMK.jpg", "cfVNsoaY5Gc", "Neo-traditionalism of Japan", "NToJ", "Track 2", 0, 0],
@@ -720,7 +696,7 @@ var ary_SongData = [
 	[1, "Unknown X ~ Unfound Adventure",								[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "5ufGjMK.jpg", "hpyElTsw-bo", "Neo-traditionalism of Japan", "NToJ", "Track 8", 1, 0],
 	[1, "Gathering the Mysterious from All Around Japan",				[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "5ufGjMK.jpg", "eLHtB4R1Qbs", "Neo-traditionalism of Japan", "NToJ", "Track 9", 0, 0],
 	[1, "Let's Live in a Lovely Cemetery",								[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "5ufGjMK.jpg", "Mjggk1D2QDU", "Neo-traditionalism of Japan", "NToJ", "Track 10", 1, 0],
-	
+
     //Book bonus CDs
 	[1, "Wind God Girl",								[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0], "w9FZqDn.jpg", "5YAstNIBRTk", "Bohemian Archive in Japanese Red", "BAiJR", "Track 1", 1, 0],
 	[1, "Adventure of the Lovestruck Tomboy",			[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0], "w9FZqDn.jpg", "5jJhBJO-La8", "Bohemian Archive in Japanese Red", "BAiJR", "Track 2", 1, 0],
@@ -759,7 +735,7 @@ var ary_SongData = [
 	[1, "The Rabbit Has Landed",						[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0], "fs.jpg", "mxlnkzshWCU", "Forbidden Scrollery", "FS", "Track 3", 1, 0],
 	//Daisakusen
 	[1, "Every Day a Red Day ~ Folksy Touhou days.",	[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0], "daisakusen.jpg", "A3g3MgxcVOE", "Touhou Arrange Kasseika Daisakusen", "TAKD", "Track 1", 1, 0],
-	
+
 	//Urban Legend in Limbo
 	[1, "Heart-Stirring Urban Legends",							[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0], "arjGI4C.jpg?1", "PWhN1akadiQ", "Urban Legend in Limbo", "ULiL", "Title/Menu Screen", 0, 0],
 	[1, "Gensokyo Mystery Discovery",							[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0], "arjGI4C.jpg?1", "7TyQzWU6Zz8", "Urban Legend in Limbo", "ULiL", "Character Select", 0, 0],
@@ -791,7 +767,7 @@ var ary_SongData = [
 	[1, "Last Occultism ~ Esotericist of the Present World",	[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0], "arjGI4C.jpg?1", "m2DrKruxJUw", "Urban Legend in Limbo", "ULiL", "Sumireko Usami's theme/Final Boss", 0, 3],
 	[1, "Each Ending",											[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0], "arjGI4C.jpg?1", "zEYTIjJkyZM", "Urban Legend in Limbo", "ULiL", "Ending", 0, 0],
 	[1, "The Arcane is Revealed",								[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0], "arjGI4C.jpg?1", "qEge1nefugk", "Urban Legend in Limbo", "ULiL", "Staff Roll", 0, 0],
-	
+
 	//Legacy of Lunatic Kingdom
 	[1, "The Space Shrine Maiden Appears",						[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0], "5OWvYpC.jpg?1", "SjqMcIDHO0k", "Legacy of Lunatic Kingdom", "LoLK", "Title Screen", 0, 0],
 	[1, "Unforgettable, the Nostalgic Greenery",				[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0], "5OWvYpC.jpg?1", "Nbqy18y0DMo", "Legacy of Lunatic Kingdom", "LoLK", "Stage 1", 0, 2],
@@ -931,7 +907,7 @@ var ary_SongData = [
 	[1, "The Animals' Rest",									[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0], "wbawc.png", "F15o3TXcnxA", "Wily Beast and Weakest Creature", "WBaWC", "Ending", 0, 0],
 	[1, "Returning Home from the Underground",					[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0], "wbawc.png", "zXiC7YFQngk", "Wily Beast and Weakest Creature", "WBaWC", "Staff Roll", 0, 0],
 	//[1, "Player's Score",										[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,0,0], "NqI4Bym.jpg", "t3hBNsqiwL8", "Great Fairy Wars", "GFW", "", 0, 0],
-	
+
 	//Touhou Gouyoku Ibun
 	[1, "Submerged Hell of Sunken Sorrow",						[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0], "shoss.jpg", "DfU31yb8eNo", "Touhou Gouyoku Ibun", "SHoSS", "Title Screen", 0, 0],
 	[1, "Eastern Strange Tale of Avarice",						[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0], "shoss.jpg", "3ScV3OKt0Yk", "Touhou Gouyoku Ibun", "SHoSS", "Staff Roll", 0, 0],
@@ -957,7 +933,7 @@ var ary_SongData = [
 	[1, "U.N. Owen Was Her?",									[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0], "shoss.jpg", "lGukmISfmyg", "Touhou Gouyoku Ibun", "SHoSS", "Flandre Scarlet's theme", 1, 1],
 	[1, "Memento of the Avaricious Beast",						[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0], "shoss.jpg", "dnzeZjSuHgQ", "Touhou Gouyoku Ibun", "SHoSS", "Yuuma Toutetsu's 1st theme", 0, 1],
 	[1, "Memento of All Organisms ~ Memory of Fossil Energy.",	[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0], "shoss.jpg", "ZOczrPEtriU", "Touhou Gouyoku Ibun", "SHoSS", "Yuuma Toutetsu's 2nd theme", 0, 1],
-	
+
 	//Unconnected Marketeers
 	[1, "A Rainbow Spanning Gensokyo",										[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1], "um.jpg", "QhFpGscR0sc", "Unconnected Marketeers", "UM", "Title Screen", 0, 0],
 	[1, "A Shower of Strange Occurrences",									[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1], "um.jpg", "7EYa1dzv2X0", "Unconnected Marketeers", "UM", "Stage 1", 0, 2],
